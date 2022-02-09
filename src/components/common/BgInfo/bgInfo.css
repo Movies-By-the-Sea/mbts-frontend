@@ -1,0 +1,11 @@
+.bgInfo {
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 75%;
+  float: right;
+  padding-right: 100px;
+}
+
+.bgInfo-icon {
+  margin-right: 5px;
+}

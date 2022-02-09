@@ -1,0 +1,44 @@
+.cw-container {
+  display: flex;
+}
+
+.cw-latest {
+  flex: 1;
+}
+
+.cw-latest-container {
+  display: flex;
+}
+
+.cw-img {
+  height: 300px;
+  width: auto;
+  border-radius: 5px;
+}
+
+.cw-info {
+  padding: 0px 20px;
+  line-height: 1.5;
+}
+
+.cw-heading {
+  flex: 1;
+  font-size: 50px;
+  padding: 30px 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .cw-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .cw-info {
+    padding: 0px;
+    line-height: 1;
+  }
+  .cw-heading {
+    color: transparent;
+    font-size: 20px;
+    padding: 0px;
+  }
+}

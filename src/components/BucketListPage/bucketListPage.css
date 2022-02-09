@@ -1,0 +1,52 @@
+.bl-heading {
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.bl-subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bl-intro-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bl-list-into-item {
+  height: 280px;
+  width: 180px;
+  border-radius: 5px;
+  transition: 500ms;
+}
+
+.bl-list-into-item:hover {
+  height: 300px;
+  width: 200px;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .bucketListPage {
+    max-width: calc(100vw - 400px);
+  }
+  .bl-heading {
+    font-size: 30px;
+  }
+  .bl-subtitle {
+    display: block;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .bl-intro-list {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .bl-list-into-item {
+    height: 150px;
+    width: 100px;
+    margin: 5px 0px;
+  }
+}
