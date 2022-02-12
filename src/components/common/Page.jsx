@@ -6,7 +6,7 @@ import Footer from './Footer/Footer';
 
 export const Page = (props) => {
   return (
-    <div style={bg_img(props.img, props.alt)}>
+    <div className='Page' style={bg_img(props.img, props.alt)}>
     <Navbar />
       <div className="container">
 

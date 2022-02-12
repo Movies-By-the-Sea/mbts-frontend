@@ -5,12 +5,21 @@ import {Page} from '../common/Page';
 
 import img from '../../images/landing_page.jpg';
 import './landingPage.css';
+import Modal from '../common/Modal/Modal';
 
 export default function LandingPage() {
 
   const [latestFilm, setLatestFilm] = useState();
   const [loading, setLoading] = useState(true);
+  const [modal, setModal] = useState(false);
+
   const isMobile = useMediaQuery({query:'(max-width:600px)'});
+
+  const closeModal = () => {
+    if(modal){
+      setModal(false);
+    }
+  }
 
   useEffect(() => {
     getLatestFilm()
@@ -41,7 +50,12 @@ export default function LandingPage() {
                   <p>Latest film to grace the lounges of MBTS is the {latestFilm.genre.map(i => i.name + ', ')} movie by acclaimed director {latestFilm.director}. Starring {latestFilm.actors.map(i => i.name + ', ')} you don't want to miss out on this one!</p>
                 </>
               )}
-              <p className='read-button'>Read more about {latestFilm.name}</p>
+              <p className='read-button'
+              onClick={(e) => {
+                e.preventDefault();
+                setModal(true);
+              }}
+              >Read more about {latestFilm.name}</p>
             </div>
           </div>
         </div>
@@ -49,6 +63,9 @@ export default function LandingPage() {
           <h1>Movies <br /> By The Sea</h1>
         </div>
       </div>
+
+      {modal ? <Modal handleModal={closeModal} info={latestFilm} /> : <></>}
+
     </Page>
   );
 }
