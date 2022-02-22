@@ -6,6 +6,7 @@ import { GrMail  } from 'react-icons/gr';
 
 import './navbar.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
 
@@ -30,10 +31,18 @@ export default function Navbar() {
                                 <h4>Movies By The Sea</h4>
                             </div>
                             <div className="nav-mob-list-items">
-                                <div className="nav-mob-item">Home</div>
-                                <div className="nav-mob-item">Movies</div>
-                                <div className="nav-mob-item">Short Films</div>
-                                <div className="nav-mob-item">About</div>
+                                <div className="nav-mob-item">
+                                    <Link to="/">Home</Link>
+                                </div>
+                                <div className="nav-mob-item">
+                                    <Link to="/bucket-list">Bucket List</Link>
+                                </div>
+                                <div className="nav-mob-item">
+                                    <Link to="#">Collections</Link>
+                                </div>
+                                <div className="nav-mob-item">
+                                    <Link to="#">About</Link>
+                                </div>
                             </div>
                             <div className="nav-mob-footer">
                                 <div className="nav-mob-footer-item">
@@ -52,10 +61,18 @@ export default function Navbar() {
                     )
                 ) :(
                     <>
-                        <div className="nav-link-item">Home</div>
-                        <div className="nav-link-item">Movies</div>
-                        <div className="nav-link-item">Short Films</div>
-                        <div className="nav-link-item">About</div>
+                        <div className="nav-link-item">
+                            <Link to="/">Home</Link>
+                        </div>
+                        <div className="nav-link-item">
+                            <Link to="/bucket-list">Bucket List</Link>
+                        </div>
+                        <div className="nav-link-item">
+                            <Link to="#">Collections</Link>
+                        </div>
+                        <div className="nav-link-item">
+                            <Link to="#">About</Link>
+                        </div>
                     </>
                 )}
             </div>

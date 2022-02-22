@@ -1,12 +1,17 @@
-import BucketListPage from "./components/BucketListPage/BucketListPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import LandingPage from "./components/LandingPage/LandingPage";
+import BucketList from "./components/Page/BucketList";
+
 
 function App() {
   return (
-    <div className="App">
-      <LandingPage />
-      <BucketListPage />
-    </div>
+    <BrowserRouter className="App">
+      <Routes>
+        <Route exact path="/" element={<LandingPage />} />
+        <Route exact path="/bucket-list" element={<BucketList />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

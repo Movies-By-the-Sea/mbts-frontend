@@ -1,0 +1,9 @@
+.bl-heading {
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.bl-subtitle {
+  display: flex;
+  justify-content: space-between;
+}

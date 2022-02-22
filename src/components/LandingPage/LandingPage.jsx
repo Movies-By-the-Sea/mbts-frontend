@@ -17,8 +17,19 @@ export default function LandingPage() {
 
   const closeModal = () => {
     if(modal){
+      document.querySelectorAll('.Page').forEach(function(m) {
+        m.style.opacity = "1";
+      });
       setModal(false);
     }
+  }
+
+  const openModal = (e) => {
+    e.preventDefault();
+    document.querySelectorAll('.Page').forEach(function(m) {
+      m.style.opacity = "0.8";
+    });
+    setModal(true);
   }
 
   useEffect(() => {
@@ -31,6 +42,7 @@ export default function LandingPage() {
 
 
   return loading ? ("Loading...") : (
+    <>
     <Page img={img} alt={latestFilm.poster} info="Portrait of a Lady on Fire, Seline Sciamma">
       <div className="cw-container">
         <div className="cw-latest">
@@ -51,10 +63,7 @@ export default function LandingPage() {
                 </>
               )}
               <p className='read-button'
-              onClick={(e) => {
-                e.preventDefault();
-                setModal(true);
-              }}
+              onClick={openModal}
               >Read more about {latestFilm.name}</p>
             </div>
           </div>
@@ -63,9 +72,8 @@ export default function LandingPage() {
           <h1>Movies <br /> By The Sea</h1>
         </div>
       </div>
-
-      {modal ? <Modal handleModal={closeModal} info={latestFilm} /> : <></>}
-
     </Page>
+    {modal ? <Modal handleModal={closeModal} info={latestFilm} /> : <></>}
+    </>
   );
 }

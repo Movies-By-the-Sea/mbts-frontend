@@ -71,3 +71,40 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media screen and (max-width: 600px) {
+  .Modal,
+  .modal-info,
+  .modal-meta-info {
+    display: inline;
+  }
+
+  .Modal {
+    top: 1.5%;
+    left: 1.5%;
+    right: 1.5%;
+    padding: 15px;
+  }
+
+  .modal-img {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+  }
+
+  .modal-meta-info-trivia-mobile {
+    line-height: 1.5;
+    opacity: 70%;
+  }
+
+  .modal-review,
+  .modal-extra-info,
+  .modal-actors-list,
+  .modal-meta-info-trivia-mobile {
+    font-size: 12px;
+  }
+
+  .modal-review {
+    font-size: 13px;
+  }
+}
