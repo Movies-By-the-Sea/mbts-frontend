@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
 import { Page } from '../Page'
+import { useMediaQuery } from 'react-responsive';
+
 import ScrollBar from '../ScrollBar/ScrollBar';
 import './collection.css';
 
@@ -10,6 +12,8 @@ export const Collection = (props) => {
 
   const [modal, setModal] = useState(false);
   const [inFocus, setInFocus] = useState();
+
+  const isMobile = useMediaQuery({query:'(max-width:600px)'});
 
   const closeModal = () => {
     if(modal){
@@ -32,13 +36,22 @@ export const Collection = (props) => {
 
   return (
     <>
-    <Page img={props.img} alt={props.alt} info={props.bg_info} className="bucketListPage">
+    <Page img={props.img} alt={props.alt} info={props.bg_info} className="collectionPage">
 
-        <h1 className='bl-heading'>{props.heading}</h1>
-        <div className="bl-subtitle">
+        <h1 className='cl-heading'>{props.heading}</h1>
+        <div className="cl-subtitle">
             <p>{props.subheading}</p>
         </div>
-        <ScrollBar openModal={openModal} data={props.data} />
+        {isMobile ? (<div className='cl-list-mob'>
+          {props.data.map((item) => {
+            return (<img 
+              onClick={openModal}
+              src={item.poster} 
+              key={item.name} 
+              alt="" 
+              className="card-item" />)
+          })}
+        </div>) : (<ScrollBar openModal={openModal} data={props.data} />)}
         
     </Page>
     {modal ? <Modal handleModal={closeModal} info={inFocus} /> : <></>}

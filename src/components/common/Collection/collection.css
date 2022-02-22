@@ -1,9 +1,40 @@
-.bl-heading {
+.cl-heading {
   font-size: 50px;
   margin-bottom: 0px;
 }
 
-.bl-subtitle {
+.cl-subtitle {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .collectionPage {
+    max-width: calc(100vw - 400px);
+  }
+  .cl-heading {
+    font-size: 30px;
+  }
+  .cl-subtitle {
+    display: block;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .card-item {
+    height: 165px;
+    width: 105px;
+    margin: 5px 2px;
+  }
+  .cl-list-mob {
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100vh;
+    overflow: scroll;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }

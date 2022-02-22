@@ -27,3 +27,28 @@ body {
   color: whitesmoke;
   transition: 400ms;
 }
+
+/* width */
+::-webkit-scrollbar {
+  height: 5px;
+  position: fixed;
+  bottom: 0%;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 10px 0px;
+    height: 85%;
+    overflow: hidden;
+  }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #747474;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #242424;
+}
