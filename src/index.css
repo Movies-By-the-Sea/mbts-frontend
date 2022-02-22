@@ -28,19 +28,22 @@ body {
   transition: 400ms;
 }
 
+.collection-card {
+  height: 275px;
+  width: auto;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.collection-card:hover {
+  cursor: pointer;
+}
+
 /* width */
 ::-webkit-scrollbar {
   height: 5px;
   position: fixed;
   bottom: 0%;
-}
-
-@media screen and (max-width: 600px) {
-  .container {
-    margin: 10px 0px;
-    height: 85%;
-    overflow: hidden;
-  }
 }
 
 /* Track */
@@ -51,4 +54,12 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #242424;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 10px 0px;
+    height: 85%;
+    overflow: hidden;
+  }
 }

@@ -2,7 +2,7 @@ import { ScrollMenu } from 'react-horizontal-scrolling-menu';
 
 import './scrollBar.css';
 
-export default function ScrollBar({data, openModal}) {
+export default function ScrollBar({data, openModal, className}) {
 
     return (
         <ScrollMenu >
@@ -12,7 +12,7 @@ export default function ScrollBar({data, openModal}) {
               onClick={openModal(item)}
               alt={item.name} 
               src={item.poster}
-              className="card-item" />
+              className={className} />
             ))}
         </ScrollMenu>
     );

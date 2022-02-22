@@ -50,7 +50,7 @@ export const Collection = (props) => {
               alt="" 
               className="card-item" />)
           })}
-        </div>) : (<ScrollBar openModal={openModal} data={props.data} />)}
+        </div>) : (<ScrollBar openModal={openModal} data={props.data} className="card-item" />)}
         
     </Page>
     {modal ? <Modal handleModal={closeModal} info={inFocus} /> : <></>}

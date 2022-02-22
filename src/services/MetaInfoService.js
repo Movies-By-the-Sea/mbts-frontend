@@ -22,13 +22,3 @@ export async function getMustWatch() {
         return [];
     }
 }
-
-export async function getMustWatchIntro() {
-    try {
-        const response = await axios.get("/must-watch");
-        return response.data['result'].slice(0, 7);
-    } catch (error) {
-        console.log(error);
-        return [];
-    }
-}

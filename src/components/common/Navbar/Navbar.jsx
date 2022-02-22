@@ -39,7 +39,7 @@ export default function Navbar() {
                                     <Link to="/bucket-list">Bucket List</Link>
                                 </div>
                                 <div className="nav-mob-item">
-                                    <Link to="#">Collections</Link>
+                                    <Link to="/collections">Collections</Link>
                                 </div>
                                 <div className="nav-mob-item">
                                     <Link to="#">About</Link>
@@ -69,7 +69,7 @@ export default function Navbar() {
                             <Link to="/bucket-list">Bucket List</Link>
                         </div>
                         <div className="nav-link-item">
-                            <Link to="#">Collections</Link>
+                            <Link to="/collections">Collections</Link>
                         </div>
                         <div className="nav-link-item">
                             <Link to="#">About</Link>
