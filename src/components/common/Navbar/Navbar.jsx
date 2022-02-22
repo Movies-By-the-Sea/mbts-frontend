@@ -4,9 +4,10 @@ import { FiInstagram } from 'react-icons/fi';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { GrMail  } from 'react-icons/gr';
 
-import './navbar.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+import './navbar.css';
 
 export default function Navbar() {
 

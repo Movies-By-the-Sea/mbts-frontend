@@ -1,12 +1,11 @@
 import { useState } from 'react';
-
-import { Page } from '../Page'
 import { useMediaQuery } from 'react-responsive';
 
+import { Page } from '../Page'
 import ScrollBar from '../ScrollBar/ScrollBar';
-import './collection.css';
-
 import Modal from '../Modal/Modal';
+
+import './collection.css';
 
 export const Collection = (props) => {
 
