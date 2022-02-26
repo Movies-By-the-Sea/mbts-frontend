@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from './components/Page/LandingPage/LandingPage';
 import BucketList from './components/Page/BucketList';
 import Collections from './components/Page/CollectionsPage/Collections';
+import About from './components/Page/AboutPage/About';
 import ErrorScreen from './components/ErrorScreen/ErrorScreen';
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/" element={<LandingPage />} />
         <Route exact path="/bucket-list" element={<BucketList />} />
         <Route exact path="/collections" element={<Collections />} />
+        <Route exact path="/about" element={<About />} />
 
         <Route exact path="/collections/international" element={<International />} />
         <Route exact path="/collections/horror" element={<Horror />} />

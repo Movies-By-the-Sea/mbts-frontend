@@ -42,7 +42,7 @@ export default function Navbar() {
                                     <Link to="/collections">Collections</Link>
                                 </div>
                                 <div className="nav-mob-item">
-                                    <Link to="#">About</Link>
+                                    <Link to="/about">About</Link>
                                 </div>
                             </div>
                             <div className="nav-mob-footer">
@@ -72,7 +72,7 @@ export default function Navbar() {
                             <Link to="/collections">Collections</Link>
                         </div>
                         <div className="nav-link-item">
-                            <Link to="#">About</Link>
+                            <Link to="/about">About</Link>
                         </div>
                     </>
                 )}
