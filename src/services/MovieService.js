@@ -72,3 +72,23 @@ export async function getSciFiFilms() {
         return [];
     }
 }
+
+export async function getActionFilms() {
+    try {
+        const response = await axios.get("/action");
+        return response.data['result']
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}
+
+export async function getDramaFilms() {
+    try {
+        const response = await axios.get("/drama");
+        return response.data['result']
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}

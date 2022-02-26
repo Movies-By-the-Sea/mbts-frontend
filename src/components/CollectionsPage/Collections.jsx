@@ -10,6 +10,8 @@ import meta from '../../images/collections/Cards/The Meta Experience.png';
 import anime from '../../images/collections/Cards/animated.png';
 import roman from '../../images/collections/Cards/romantic.png';
 import scifi from '../../images/collections/Cards/scifi.png';
+import action from '../../images/collections/Cards/Action.png';
+import drama from '../../images/collections/Cards/Drama.png';
 
 import ScrollBar from '../common/ScrollBar/ScrollBar';
 
@@ -55,6 +57,16 @@ export default function Collections() {
             name: "The SciFi Imagination",
             poster: scifi,
             link: "sci-fi"
+        },
+        {
+            name: "Life of Action",
+            poster: action,
+            link: "action"
+        },
+        {
+            name: "Soulful Drama",
+            poster: drama,
+            link: "drama"
         }
     ]
 

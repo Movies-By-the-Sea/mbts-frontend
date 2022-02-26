@@ -10,6 +10,8 @@ import TrueStory from "./components/Page/TrueStory";
 import Animated from "./components/Page/Animated";
 import Romantic from "./components/Page/Romantic";
 import SciFi from "./components/Page/SciFi";
+import Action from "./components/Page/Action";
+import Drama from "./components/Page/Drama";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Route exact path="/collections/animated" element={<Animated />} />
         <Route exact path="/collections/romantic" element={<Romantic />} />
         <Route exact path="/collections/sci-fi" element={<SciFi />} />
+        <Route exact path="/collections/action" element={<Action />} />
+        <Route exact path="/collections/drama" element={<Drama />} />
       </Routes>
     </BrowserRouter>
   );
