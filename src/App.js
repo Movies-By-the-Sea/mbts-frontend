@@ -13,6 +13,7 @@ import SciFi from "./components/Page/SciFi";
 import Action from "./components/Page/Action";
 import Drama from "./components/Page/Drama";
 import Thriller from "./components/Page/Thriller";
+import Lighthearted from "./components/Page/Lighthearted";
 
 function App() {
   return (
@@ -25,13 +26,14 @@ function App() {
         <Route exact path="/collections/international" element={<International />} />
         <Route exact path="/collections/horror" element={<Horror />} />
         <Route exact path="/collections/meta" element={<Meta />} />
-        <Route exact path="/True-Story" element={<TrueStory />} />
+        <Route exact path="/collections/True-Story" element={<TrueStory />} />
         <Route exact path="/collections/animated" element={<Animated />} />
         <Route exact path="/collections/romantic" element={<Romantic />} />
         <Route exact path="/collections/sci-fi" element={<SciFi />} />
         <Route exact path="/collections/action" element={<Action />} />
         <Route exact path="/collections/drama" element={<Drama />} />
         <Route exact path="/collections/thriller" element={<Thriller />} />
+        <Route exact path="/collections/lighthearted" element={<Lighthearted />} />
       </Routes>
     </BrowserRouter>
   );

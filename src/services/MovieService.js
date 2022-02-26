@@ -102,3 +102,13 @@ export async function getThrillerFilms() {
         return [];
     }
 }
+
+export async function getLightheartedFilms() {
+    try {
+        const response = await axios.get("/lighthearted");
+        return response.data['result']
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}

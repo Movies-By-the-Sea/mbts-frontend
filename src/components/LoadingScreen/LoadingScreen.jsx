@@ -20,7 +20,7 @@ export default function Loading() {
     let textTimer = setTimeout(function(){
         setTextIndex((textIndex + 1) % exampleText.length);
         setLoaderText(exampleText[textIndex]);
-    }, 300);
+    }, 700);
 
   return (
     <div className='loading-screen'>
