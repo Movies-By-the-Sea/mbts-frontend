@@ -7,6 +7,8 @@ import International from "./components/Page/International";
 import Horror from "./components/Page/Horror";
 import Meta from "./components/Page/Meta";
 import TrueStory from "./components/Page/TrueStory";
+import Animated from "./components/Page/Animated";
+import Romantic from "./components/Page/Romantic";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route exact path="/horror" element={<Horror />} />
         <Route exact path="/meta" element={<Meta />} />
         <Route exact path="/True-Story" element={<TrueStory />} />
+        <Route exact path="/animated" element={<Animated />} />
+        <Route exact path="/romantic" element={<Romantic />} />
       </Routes>
     </BrowserRouter>
   );

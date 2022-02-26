@@ -42,3 +42,23 @@ export async function getTrueStoryFilms() {
         return [];
     }
 }
+
+export async function getAnimatedFilms() {
+    try {
+        const response = await axios.get("/animated");
+        return response.data['result']
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}
+
+export async function getRomanticFilms() {
+    try {
+        const response = await axios.get("/romance");
+        return response.data['result']
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}

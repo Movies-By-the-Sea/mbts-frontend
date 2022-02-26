@@ -7,6 +7,8 @@ import intl from '../../images/collections/Cards/International Affair.png';
 import horror from '../../images/collections/Cards/Horror Nights.png';
 import trueS from '../../images/collections/Cards/True Stories.png';
 import meta from '../../images/collections/Cards/The Meta Experience.png';
+import anime from '../../images/collections/Cards/animated.png';
+import roman from '../../images/collections/Cards/romantic.png';
 import ScrollBar from '../common/ScrollBar/ScrollBar';
 
 import './collections.css';
@@ -17,6 +19,11 @@ export default function Collections() {
     const navigate = useNavigate();
 
     const mapping = [
+        {
+            name: "Animation Land",
+            poster: anime,
+            link: "animated"
+        },
         {
             name: "International Affair",
             poster: intl,
@@ -36,6 +43,11 @@ export default function Collections() {
             name: "The Meta Experience",
             poster: meta,
             link: "meta"
+        },
+        {
+            name: "Romantic Invitation",
+            poster: roman,
+            link: "romantic"
         }
     ]
 
