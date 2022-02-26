@@ -18,12 +18,12 @@ function App() {
         <Route exact path="/bucket-list" element={<BucketList />} />
         <Route exact path="/collections" element={<Collections />} />
 
-        <Route exact path="/international" element={<International />} />
-        <Route exact path="/horror" element={<Horror />} />
-        <Route exact path="/meta" element={<Meta />} />
+        <Route exact path="/collections/international" element={<International />} />
+        <Route exact path="/collections/horror" element={<Horror />} />
+        <Route exact path="/collections/meta" element={<Meta />} />
         <Route exact path="/True-Story" element={<TrueStory />} />
-        <Route exact path="/animated" element={<Animated />} />
-        <Route exact path="/romantic" element={<Romantic />} />
+        <Route exact path="/collections/animated" element={<Animated />} />
+        <Route exact path="/collections/romantic" element={<Romantic />} />
       </Routes>
     </BrowserRouter>
   );

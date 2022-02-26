@@ -53,7 +53,7 @@ export default function Collections() {
 
     const openPage = (item) => (e) => {
         e.preventDefault();
-        navigate(`/${item.link}`);
+        navigate(`/collections/${item.link}`);
     }
 
   return (
