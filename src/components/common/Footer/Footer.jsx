@@ -12,11 +12,11 @@ export default function Footer() {
       <div className='footer'>
           <div className="footer-item">
             <FiInstagram className='footer-icon' />
-            @movies.by.the.sea
+            <a href="https://www.instagram.com/movies.by.the.sea/">@movies.by.the.sea</a>
           </div>
           <div className="footer-item">
             <GrMail className='footer-icon' />
-            movies.by.the.sea.42@gmail.com
+            <a href="mailto:movies.by.the.sea.42@gmail.com">movies.by.the.sea.42@gmail.com</a>
           </div>
           <div className="footer-item">
             Get in touch for poster credits

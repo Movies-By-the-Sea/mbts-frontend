@@ -16,6 +16,11 @@
   opacity: 75%;
 }
 
+.footer-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .footer-icon {
   margin-right: 5px;
 }
