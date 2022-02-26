@@ -19,6 +19,7 @@ export default function BucketList() {
         })
     }, [])
 
+
   return load ? (<Loading />) : (
     <Collection
     img={img}

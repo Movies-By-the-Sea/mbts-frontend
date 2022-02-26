@@ -44,7 +44,7 @@ export const Collection = (props) => {
         {isMobile ? (<div className='cl-list-mob'>
           {props.data.map((item) => {
             return (<img 
-              onClick={openModal}
+              onClick={openModal(item)}
               src={item.poster} 
               key={item.name} 
               alt="" 

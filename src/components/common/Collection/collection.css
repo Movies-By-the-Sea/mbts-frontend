@@ -29,8 +29,9 @@
     position: relative;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
     overflow: scroll;
   }
 
