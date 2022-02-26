@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 import LandingPage from './components/Page/LandingPage/LandingPage';
 import BucketList from './components/Page/BucketList';
@@ -21,7 +21,7 @@ import Lighthearted from './components/Page/CollectionsPage/Collections/Lighthea
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL} className="App">
+    <HashRouter className="App">
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
         <Route exact path="/bucket-list" element={<BucketList />} />
@@ -41,7 +41,7 @@ function App() {
         <Route exact path="/collections/lighthearted" element={<Lighthearted />} />
         <Route element={ErrorScreen} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
