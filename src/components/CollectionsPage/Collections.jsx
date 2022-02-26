@@ -9,6 +9,8 @@ import trueS from '../../images/collections/Cards/True Stories.png';
 import meta from '../../images/collections/Cards/The Meta Experience.png';
 import anime from '../../images/collections/Cards/animated.png';
 import roman from '../../images/collections/Cards/romantic.png';
+import scifi from '../../images/collections/Cards/scifi.png';
+
 import ScrollBar from '../common/ScrollBar/ScrollBar';
 
 import './collections.css';
@@ -48,6 +50,11 @@ export default function Collections() {
             name: "Romantic Invitation",
             poster: roman,
             link: "romantic"
+        },
+        {
+            name: "The SciFi Imagination",
+            poster: scifi,
+            link: "sci-fi"
         }
     ]
 

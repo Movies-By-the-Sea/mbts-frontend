@@ -62,3 +62,13 @@ export async function getRomanticFilms() {
         return [];
     }
 }
+
+export async function getSciFiFilms() {
+    try {
+        const response = await axios.get("/sci-fi");
+        return response.data['result']
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}

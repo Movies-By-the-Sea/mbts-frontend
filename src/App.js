@@ -9,6 +9,7 @@ import Meta from "./components/Page/Meta";
 import TrueStory from "./components/Page/TrueStory";
 import Animated from "./components/Page/Animated";
 import Romantic from "./components/Page/Romantic";
+import SciFi from "./components/Page/SciFi";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/True-Story" element={<TrueStory />} />
         <Route exact path="/collections/animated" element={<Animated />} />
         <Route exact path="/collections/romantic" element={<Romantic />} />
+        <Route exact path="/collections/sci-fi" element={<SciFi />} />
       </Routes>
     </BrowserRouter>
   );
