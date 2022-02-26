@@ -21,7 +21,7 @@ import Lighthearted from './components/Page/CollectionsPage/Collections/Lighthea
 
 function App() {
   return (
-    <BrowserRouter className="App">
+    <BrowserRouter basename={process.env.PUBLIC_URL} className="App">
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
         <Route exact path="/bucket-list" element={<BucketList />} />
