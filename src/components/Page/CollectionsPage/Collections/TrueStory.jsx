@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react'
 
-import {Collection} from '../common/Collection/Collection';
-import { getTrueStoryFilms } from '../../services/MovieService';
+import { Collection } from '../../../common/Collection/Collection';
+import { getTrueStoryFilms } from '../../../../services/MovieService';
 
-import img from '../../images/collections/true_story.png';
-import Loading from '../LoadingScreen/LoadingScreen';
-
+import img from '../../../../images/collections/true_story.png';
+import Loading from '../../../LoadingScreen/LoadingScreen';
 
 export default function TrueStory() {
 

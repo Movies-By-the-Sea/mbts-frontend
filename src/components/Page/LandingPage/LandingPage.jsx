@@ -1,11 +1,12 @@
-import { getLatestFilm } from '../../services/MetaInfoService';
 import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState } from 'react';
-import {Page} from '../common/Page';
 
-import img from '../../images/landing_page.jpg';
-import Modal from '../common/Modal/Modal';
-import Loading from '../LoadingScreen/LoadingScreen';
+import { getLatestFilm } from '../../../services/MetaInfoService';
+import { Page } from '../../common/Page';
+
+import img from '../../../images/landing_page.jpg';
+import Modal from '../../common/Modal/Modal';
+import Loading from '../../LoadingScreen/LoadingScreen';
 
 import './landingPage.css';
 

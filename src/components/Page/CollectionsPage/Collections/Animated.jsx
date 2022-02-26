@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
-import {Collection} from '../common/Collection/Collection';
-import { getAnimatedFilms } from '../../services/MovieService';
+import { Collection } from '../../../common/Collection/Collection';
+import { getAnimatedFilms } from '../../../../services/MovieService';
 
-import img from '../../images/collections/animated.png';
-import Loading from '../LoadingScreen/LoadingScreen';
-
+import img from '../../../../images/collections/animated.png';
+import Loading from '../../../LoadingScreen/LoadingScreen';
 
 export default function Animated() {
 
