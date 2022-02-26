@@ -12,6 +12,7 @@ import roman from '../../images/collections/Cards/romantic.png';
 import scifi from '../../images/collections/Cards/scifi.png';
 import action from '../../images/collections/Cards/Action.png';
 import drama from '../../images/collections/Cards/Drama.png';
+import thriller from '../../images/collections/Cards/Mystery.png';
 
 import ScrollBar from '../common/ScrollBar/ScrollBar';
 
@@ -67,6 +68,11 @@ export default function Collections() {
             name: "Soulful Drama",
             poster: drama,
             link: "drama"
+        },
+        {
+            name: "Mystery Alley",
+            poster: thriller,
+            link: "thriller"
         }
     ]
 

@@ -92,3 +92,13 @@ export async function getDramaFilms() {
         return [];
     }
 }
+
+export async function getThrillerFilms() {
+    try {
+        const response = await axios.get("/mystery");
+        return response.data['result']
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}

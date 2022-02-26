@@ -12,6 +12,7 @@ import Romantic from "./components/Page/Romantic";
 import SciFi from "./components/Page/SciFi";
 import Action from "./components/Page/Action";
 import Drama from "./components/Page/Drama";
+import Thriller from "./components/Page/Thriller";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route exact path="/collections/sci-fi" element={<SciFi />} />
         <Route exact path="/collections/action" element={<Action />} />
         <Route exact path="/collections/drama" element={<Drama />} />
+        <Route exact path="/collections/thriller" element={<Thriller />} />
       </Routes>
     </BrowserRouter>
   );
