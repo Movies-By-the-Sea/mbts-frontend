@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
 
 import {Collection} from '../common/Collection/Collection';
+import { getMetaFilms } from '../../services/MovieService';
 
 import img from '../../images/collections/meta.jpg';
-import { getMetaFilms } from '../../services/MovieService';
+import Loading from '../LoadingScreen/LoadingScreen';
+
 
 export default function Horror() {
 
@@ -18,7 +20,7 @@ export default function Horror() {
         })
     }, [])
 
-  return load ? ("Loading...") : (
+  return load ? (<Loading />) : (
     <Collection
     img={img}
     alt={img}

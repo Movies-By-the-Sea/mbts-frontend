@@ -4,6 +4,7 @@ import { getMustWatch } from '../../services/MetaInfoService';
 import {Collection} from '../common/Collection/Collection';
 
 import img from '../../images/bucket_list.png';
+import Loading from '../LoadingScreen/LoadingScreen';
 
 export default function BucketList() {
 
@@ -18,7 +19,7 @@ export default function BucketList() {
         })
     }, [])
 
-  return load ? ("Loading...") : (
+  return load ? (<Loading />) : (
     <Collection
     img={img}
     alt={img}

@@ -4,8 +4,10 @@ import { useEffect, useState } from 'react';
 import {Page} from '../common/Page';
 
 import img from '../../images/landing_page.jpg';
-import './landingPage.css';
 import Modal from '../common/Modal/Modal';
+import Loading from '../LoadingScreen/LoadingScreen';
+
+import './landingPage.css';
 
 export default function LandingPage() {
 
@@ -41,7 +43,7 @@ export default function LandingPage() {
   }, []);
 
 
-  return loading ? ("Loading...") : (
+  return loading ? (<Loading />) : (
     <>
     <Page img={img} alt={latestFilm.poster} info="Portrait of a Lady on Fire, Seline Sciamma">
       <div className="cw-container">

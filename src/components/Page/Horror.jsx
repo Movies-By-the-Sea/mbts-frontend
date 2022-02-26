@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
 
 import {Collection} from '../common/Collection/Collection';
+import { getHorrorFilms } from '../../services/MovieService';
 
 import img from '../../images/collections/horror.jpg';
-import { getHorrorFilms } from '../../services/MovieService';
+import Loading from '../LoadingScreen/LoadingScreen';
+
 
 export default function Horror() {
 
@@ -18,13 +20,13 @@ export default function Horror() {
         })
     }, [])
 
-  return load ? ("Loading...") : (
+  return load ? (<Loading />) : (
     <Collection
     img={img}
     alt={img}
-    bg_info={"Hereditary, Ari Aster"}
+    bg_info={"The VVitch, Robert Eggers"}
     heading={"Horror Nights"}
-    subheading={"Feeling a bit darring, are we? Well, we’ve got just the right set of horror and thriller films for you here!"}
+    subheading={"Feeling a bit darring, are we? Well, we’ve got just the right set of films for you here!"}
     data={films}
     />
   )

@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
 
 import {Collection} from '../common/Collection/Collection';
+import { getInternationalFilms } from '../../services/MovieService';
 
 import img from '../../images/collections/international.jpg';
-import { getInternationalFilms } from '../../services/MovieService';
+import Loading from '../LoadingScreen/LoadingScreen';
+
 
 export default function International() {
 
@@ -18,7 +20,7 @@ export default function International() {
         })
     }, [])
 
-  return load ? ("Loading...") : (
+  return load ? (<Loading />) : (
     <Collection
     img={img}
     alt={img}
