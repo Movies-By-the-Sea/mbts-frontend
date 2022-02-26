@@ -14,6 +14,7 @@ import Action from "./components/Page/Action";
 import Drama from "./components/Page/Drama";
 import Thriller from "./components/Page/Thriller";
 import Lighthearted from "./components/Page/Lighthearted";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route exact path="/collections/drama" element={<Drama />} />
         <Route exact path="/collections/thriller" element={<Thriller />} />
         <Route exact path="/collections/lighthearted" element={<Lighthearted />} />
+        <Route element={ErrorPage} />
       </Routes>
     </BrowserRouter>
   );
