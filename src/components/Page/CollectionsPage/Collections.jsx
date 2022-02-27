@@ -3,17 +3,17 @@ import { useNavigate } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
 import img from '../../../images/collections.png';
-import intl from '../../../images/collections/Cards/International Affair.png';
-import horror from '../../../images/collections/Cards/Horror Nights.png';
-import trueS from '../../../images/collections/Cards/True Stories.png';
-import meta from '../../../images/collections/Cards/The Meta Experience.png';
-import anime from '../../../images/collections/Cards/animated.png';
-import roman from '../../../images/collections/Cards/romantic.png';
-import scifi from '../../../images/collections/Cards/scifi.png';
-import action from '../../../images/collections/Cards/Action.png';
-import drama from '../../../images/collections/Cards/Drama.png';
-import thriller from '../../../images/collections/Cards/Mystery.png';
-import light from '../../../images/collections/Cards/Lighthearted.png';
+import intl from '../../../images/collections/Cards/International Affair.webp';
+import horror from '../../../images/collections/Cards/Horror Nights.webp';
+import trueS from '../../../images/collections/Cards/True Stories.webp';
+import meta from '../../../images/collections/Cards/The Meta Experience.webp';
+import anime from '../../../images/collections/Cards/animated.webp';
+import roman from '../../../images/collections/Cards/romantic.webp';
+import scifi from '../../../images/collections/Cards/scifi.webp';
+import action from '../../../images/collections/Cards/Action.webp';
+import drama from '../../../images/collections/Cards/Drama.webp';
+import thriller from '../../../images/collections/Cards/Mystery.webp';
+import light from '../../../images/collections/Cards/Lighthearted.webp';
 
 import ScrollBar from '../../common/ScrollBar/ScrollBar';
 
