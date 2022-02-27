@@ -1,10 +1,12 @@
 # MBTS Frontend
 
-_Status :_ __Under Build__
+_Status :_ __Under Testing__
 
 Files for the MBTS frontend, build using ReactJS.
 
 [Figma FrameWork](https://www.figma.com/file/HGGsGDQcVxS6AQEClTuk72/Iteration-4?node-id=0%3A1)
+
+[Github Pages hosted](https://movies-by-the-sea.github.io/mbts-frontend/)
 
 ## Available Scripts
 
