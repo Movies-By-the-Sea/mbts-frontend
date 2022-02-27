@@ -2,7 +2,6 @@ import { Page } from '../../common/Page';
 import { useNavigate } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
-import img from '../../../images/collections.png';
 import intl from '../../../images/collections/Cards/International Affair.webp';
 import horror from '../../../images/collections/Cards/Horror Nights.webp';
 import trueS from '../../../images/collections/Cards/True Stories.webp';
@@ -23,6 +22,8 @@ export default function Collections() {
 
     const isMobile = useMediaQuery({query:'(max-width:600px)'});
     const navigate = useNavigate();
+
+    const img = "https://ik.imagekit.io/mbts/collections_ucwl3bPOi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645937449246";
 
     const mapping = [
         {

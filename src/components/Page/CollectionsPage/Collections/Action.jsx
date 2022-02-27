@@ -3,13 +3,13 @@ import { useEffect, useState } from 'react'
 import { Collection } from '../../../common/Collection/Collection';
 import { getActionFilms } from '../../../../services/MovieService';
 
-import img from '../../../../images/collections/action.png';
 import Loading from '../../../LoadingScreen/LoadingScreen';
 
 export default function Action() {
 
     const [films, setFilms] = useState();
     const [load, setLoad] = useState(true);
+    const img = "https://ik.imagekit.io/mbts/action_5qMUDkCHn.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645938028164";
 
     useEffect(() => {
         getActionFilms()

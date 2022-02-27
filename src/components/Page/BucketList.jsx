@@ -3,13 +3,13 @@ import { useEffect, useState } from 'react'
 import { getMustWatch } from '../../services/MetaInfoService';
 import {Collection} from '../common/Collection/Collection';
 
-import img from '../../images/bucket_list.png';
 import Loading from '../LoadingScreen/LoadingScreen';
 
 export default function BucketList() {
 
     const [films, setFilms] = useState();
     const [load, setLoad] = useState(true);
+    const img = "https://ik.imagekit.io/mbts/bucket_list_bl9AGyEBf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645937449245";
 
     useEffect(() => {
         getMustWatch()

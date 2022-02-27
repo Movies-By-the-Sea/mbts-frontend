@@ -1,9 +1,10 @@
 import { Page } from '../../common/Page';
 
-import img from '../../../images/about.png';
 import './about.css';
 
 export default function About() {
+
+    const img = "https://ik.imagekit.io/mbts/about_OMoVwhcIf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645937449707";
 
     return (
         <Page img={img} alt={img} info="No Time To Die, Cary Joji Fukunaga">

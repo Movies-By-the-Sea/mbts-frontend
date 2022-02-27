@@ -3,13 +3,13 @@ import { useEffect, useState } from 'react'
 import { Collection } from '../../../common/Collection/Collection';
 import { getThrillerFilms } from '../../../../services/MovieService';
 
-import img from '../../../../images/collections/mystery.jpeg';
 import Loading from '../../../LoadingScreen/LoadingScreen';
 
 export default function Animated() {
 
     const [films, setFilms] = useState();
     const [load, setLoad] = useState(true);
+    const img = "https://ik.imagekit.io/mbts/mystery_B0hPv7yssVLQI.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1645938024092";
 
     useEffect(() => {
         getThrillerFilms()
