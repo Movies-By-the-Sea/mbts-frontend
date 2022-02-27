@@ -21,8 +21,8 @@
     line-height: 1.2;
   }
   .card-item {
-    height: 165px;
-    width: 105px;
+    height: 150px;
+    width: 30%;
     margin: 5px 2px;
   }
   .cl-list-mob {
@@ -30,7 +30,7 @@
     width: 100%;
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: fit-content;
     overflow: scroll;
   }
