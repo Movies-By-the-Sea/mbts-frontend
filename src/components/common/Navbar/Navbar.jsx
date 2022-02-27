@@ -1,11 +1,11 @@
-import { useMediaQuery } from 'react-responsive';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { FiInstagram } from 'react-icons/fi';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
-import { GrMail  } from 'react-icons/gr';
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { GrMail  } from 'react-icons/gr';
+import { FiInstagram } from 'react-icons/fi';
+import { useMediaQuery } from 'react-responsive';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
+
 
 import './navbar.css';
 

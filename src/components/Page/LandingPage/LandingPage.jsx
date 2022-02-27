@@ -1,8 +1,8 @@
 import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState } from 'react';
 
-import { getLatestFilm } from '../../../services/MetaInfoService';
 import { Page } from '../../common/Page';
+import { getLatestFilm } from '../../../services/MetaInfoService';
 
 import Modal from '../../common/Modal/Modal';
 import Loading from '../../LoadingScreen/LoadingScreen';
@@ -12,11 +12,11 @@ import './landingPage.css';
 export default function LandingPage() {
 
   const [latestFilm, setLatestFilm] = useState();
-  const [loading, setLoading] = useState(true);
-  const [modal, setModal] = useState(false);
+  const [loading, setLoading]       = useState(true);
+  const [modal, setModal]           = useState(false);
 
   const isMobile = useMediaQuery({query:'(max-width:600px)'});
-  const img = "https://ik.imagekit.io/mbts/landing_page_UbSj4_6Ut.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645937449100";
+  const img      = "https://ik.imagekit.io/mbts/landing_page_UbSj4_6Ut.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645937449100";
 
   const closeModal = () => {
     if(modal){

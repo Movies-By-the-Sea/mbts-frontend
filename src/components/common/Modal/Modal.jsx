@@ -1,5 +1,5 @@
-import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { useMediaQuery } from 'react-responsive';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 import './modal.css';
 

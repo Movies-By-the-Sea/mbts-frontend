@@ -1,8 +1,7 @@
-import bg_img from '../../theme/style';
-
 import Navbar from './Navbar/Navbar';
 import BgInfo from './BgInfo/BgInfo';
 import Footer from './Footer/Footer';
+import bg_img from '../../theme/style';
 
 export const Page = (props) => {
   return (

@@ -1,44 +1,44 @@
 import { Routes, Route, HashRouter } from "react-router-dom";
 
-import LandingPage from './components/Page/LandingPage/LandingPage';
 import BucketList from './components/Page/BucketList';
-import Collections from './components/Page/CollectionsPage/Collections';
 import About from './components/Page/AboutPage/About';
 import ErrorScreen from './components/ErrorScreen/ErrorScreen';
+import LandingPage from './components/Page/LandingPage/LandingPage';
+import Collections from './components/Page/CollectionsPage/Collections';
 
-
-import International from './components/Page/CollectionsPage/Collections/International';
-import Horror from './components/Page/CollectionsPage/Collections/Horror';
 import Meta from './components/Page/CollectionsPage/Collections/Meta';
-import TrueStory from './components/Page/CollectionsPage/Collections/TrueStory';
+import SciFi from './components/Page/CollectionsPage/Collections/SciFi';
+import Drama from './components/Page/CollectionsPage/Collections/Drama';
+import Horror from './components/Page/CollectionsPage/Collections/Horror';
+import Action from './components/Page/CollectionsPage/Collections/Action';
+import Thriller from './components/Page/CollectionsPage/Collections/Thriller';
 import Animated from './components/Page/CollectionsPage/Collections/Animated';
 import Romantic from './components/Page/CollectionsPage/Collections/Romantic';
-import SciFi from './components/Page/CollectionsPage/Collections/SciFi';
-import Action from './components/Page/CollectionsPage/Collections/Action';
-import Drama from './components/Page/CollectionsPage/Collections/Drama';
-import Thriller from './components/Page/CollectionsPage/Collections/Thriller';
+import TrueStory from './components/Page/CollectionsPage/Collections/TrueStory';
 import Lighthearted from './components/Page/CollectionsPage/Collections/Lighthearted';
+import International from './components/Page/CollectionsPage/Collections/International';
 
 function App() {
   return (
     <HashRouter className="App">
       <Routes>
+        <Route exact path="/about" element={<About />} />
         <Route exact path="/" element={<LandingPage />} />
         <Route exact path="/bucket-list" element={<BucketList />} />
         <Route exact path="/collections" element={<Collections />} />
-        <Route exact path="/about" element={<About />} />
 
-        <Route exact path="/collections/international" element={<International />} />
-        <Route exact path="/collections/horror" element={<Horror />} />
         <Route exact path="/collections/meta" element={<Meta />} />
-        <Route exact path="/collections/True-Story" element={<TrueStory />} />
-        <Route exact path="/collections/animated" element={<Animated />} />
-        <Route exact path="/collections/romantic" element={<Romantic />} />
+        <Route exact path="/collections/drama" element={<Drama />} />
         <Route exact path="/collections/sci-fi" element={<SciFi />} />
         <Route exact path="/collections/action" element={<Action />} />
-        <Route exact path="/collections/drama" element={<Drama />} />
+        <Route exact path="/collections/horror" element={<Horror />} />
         <Route exact path="/collections/thriller" element={<Thriller />} />
+        <Route exact path="/collections/animated" element={<Animated />} />
+        <Route exact path="/collections/romantic" element={<Romantic />} />
+        <Route exact path="/collections/True-Story" element={<TrueStory />} />
         <Route exact path="/collections/lighthearted" element={<Lighthearted />} />
+        <Route exact path="/collections/international" element={<International />} />
+
         <Route element={ErrorScreen} />
       </Routes>
     </HashRouter>

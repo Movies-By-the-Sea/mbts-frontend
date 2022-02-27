@@ -17,7 +17,7 @@ export default function Loading() {
     const [loaderText, setLoaderText] = useState(exampleText[0]);
     const [textIndex, setTextIndex] = useState(0);
 
-    let textTimer = setTimeout(function(){
+    setTimeout(function(){
         setTextIndex((textIndex + 1) % exampleText.length);
         setLoaderText(exampleText[textIndex]);
     }, 700);

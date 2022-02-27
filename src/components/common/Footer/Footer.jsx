@@ -1,6 +1,6 @@
-import { useMediaQuery } from 'react-responsive';
-import { FiInstagram } from 'react-icons/fi';
 import { GrMail  } from 'react-icons/gr';
+import { FiInstagram } from 'react-icons/fi';
+import { useMediaQuery } from 'react-responsive';
 
 import './footer.css';
 

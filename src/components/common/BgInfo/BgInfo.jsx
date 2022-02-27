@@ -1,5 +1,5 @@
-import { BsFillCameraReelsFill } from 'react-icons/bs';
 import { useMediaQuery } from 'react-responsive'
+import { BsFillCameraReelsFill } from 'react-icons/bs';
 
 import './bgInfo.css';
 

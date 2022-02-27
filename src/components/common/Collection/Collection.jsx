@@ -1,15 +1,15 @@
+import { Page } from '../Page';
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
-import { Page } from '../Page'
-import ScrollBar from '../ScrollBar/ScrollBar';
 import Modal from '../Modal/Modal';
+import ScrollBar from '../ScrollBar/ScrollBar';
 
 import './collection.css';
 
 export const Collection = (props) => {
 
-  const [modal, setModal] = useState(false);
+  const [modal, setModal]     = useState(false);
   const [inFocus, setInFocus] = useState();
 
   const isMobile = useMediaQuery({query:'(max-width:600px)'});
@@ -44,11 +44,11 @@ export const Collection = (props) => {
         {isMobile ? (<div className='cl-list-mob'>
           {props.data.map((item) => {
             return (<img 
-              onClick={openModal(item)}
-              src={item.poster} 
-              key={item.name} 
-              alt="" 
-              className="card-item" />)
+              onClick   = {openModal(item)}
+              src       = {item.poster}
+              key       = {item.name}
+              alt       = ""
+              className = "card-item" />)
           })}
         </div>) : (<ScrollBar openModal={openModal} data={props.data} className="card-item" />)}
         

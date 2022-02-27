@@ -8,11 +8,11 @@ export default function ScrollBar({data, openModal, className}) {
         <ScrollMenu >
             {data.map((item) => (
               <img 
-              key={item.name}
-              onClick={openModal(item)}
-              alt={item.name} 
-              src={item.poster}
-              className={className} />
+              key       = {item.name}
+              onClick   = {openModal(item)}
+              alt       = {item.name}
+              src       = {item.poster}
+              className = {className} />
             ))}
         </ScrollMenu>
     );
