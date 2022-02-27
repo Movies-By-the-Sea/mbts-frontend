@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mbts-frontend/static/css/main.6cfaddbf.css",
+    "main.css": "/mbts-frontend/static/css/main.ac806504.css",
     "main.js": "/mbts-frontend/static/js/main.ef4b96de.js",
     "static/js/787.cda612ba.chunk.js": "/mbts-frontend/static/js/787.cda612ba.chunk.js",
     "static/media/action.png": "/mbts-frontend/static/media/action.480af290d4ce1f2d16f9.png",
@@ -30,12 +30,12 @@
     "static/media/scifi.jpg": "/mbts-frontend/static/media/scifi.c2ca0ef925be10229250.jpg",
     "static/media/mystery.jpeg": "/mbts-frontend/static/media/mystery.f45b96e8647b76d46da9.jpeg",
     "index.html": "/mbts-frontend/index.html",
-    "main.6cfaddbf.css.map": "/mbts-frontend/static/css/main.6cfaddbf.css.map",
+    "main.ac806504.css.map": "/mbts-frontend/static/css/main.ac806504.css.map",
     "main.ef4b96de.js.map": "/mbts-frontend/static/js/main.ef4b96de.js.map",
     "787.cda612ba.chunk.js.map": "/mbts-frontend/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cfaddbf.css",
+    "static/css/main.ac806504.css",
     "static/js/main.ef4b96de.js"
   ]
 }
