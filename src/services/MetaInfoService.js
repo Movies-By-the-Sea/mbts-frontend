@@ -12,13 +12,3 @@ export async function getLatestFilm() {
         return [];
     }
 }
-
-export async function getMustWatch() {
-    try {
-        const response = await axios.get("/must-watch");
-        return response.data['result']
-    } catch (error) {
-        console.log(error);
-        return [];
-    }
-}
