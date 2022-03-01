@@ -52,21 +52,66 @@
   transition: 700ms;
 }
 
+.btn-left {
+  margin-right: 20px;
+}
+
 /* SCROLLBAR */
 /* Let's get this party started */
-::-webkit-scrollbar {
+.t3-scroll-parent::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+.t3-scroll-parent::-webkit-scrollbar-track {
   background: rgb(0, 0, 0);
   border: 4px solid transparent;
   background-clip: content-box; /* THIS IS IMPORTANT */
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+.t3-scroll-parent::-webkit-scrollbar-thumb {
   background: #fff;
   background-color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .t3-scroll-parent {
+    height: 100vh;
+    overflow-x: visible;
+  }
+  .sc-box {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: inherit;
+    background-color: #141414;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .sc-title {
+    font-size: 30px;
+  }
+  .sc-subtitle {
+    color: gray;
+    font-weight: bold;
+    justify-content: space-around;
+  }
+  .sc-text {
+    margin: 10px 0px;
+    line-height: 1.5;
+  }
+  .sc-img {
+    width: 100%;
+    height: 500px;
+  }
+  .sc-action {
+    justify-content: space-around;
+  }
+  .btn-left {
+    margin-right: 0px;
+  }
 }

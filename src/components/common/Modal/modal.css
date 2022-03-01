@@ -107,4 +107,7 @@
   .modal-review {
     font-size: 13px;
   }
+  .info-divider {
+    margin: 0px 10px;
+  }
 }
