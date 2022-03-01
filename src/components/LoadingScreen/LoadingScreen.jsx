@@ -11,7 +11,9 @@ export default function Loading() {
         "Assembling the cast and crew",
         "Deciding the location and arranging logistics",
         "Setting up the lights and camera to start filming",
-        "Editing footage in post-production"
+        "Editing footage in post-production",
+        "Recording epic score and soundtrack",
+        "Rolling the red carpet for the premier",
     ];
 
     const [loaderText, setLoaderText] = useState(exampleText[0]);

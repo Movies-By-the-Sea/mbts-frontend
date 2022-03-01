@@ -41,7 +41,7 @@ function App() {
         <Route exact path="/collections/mbts-essentials" element={<Essentials />} />
         <Route exact path="/collections/international" element={<International />} />
 
-        <Route element={ErrorScreen} />
+        <Route path="*" element={ErrorScreen} />
       </Routes>
     </HashRouter>
   );
