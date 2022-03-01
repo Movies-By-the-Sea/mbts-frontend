@@ -1,6 +1,6 @@
+import { getTop30Films } from '../../../services/MetaInfoService';
 import { useState, useEffect } from 'react';
 import { Page } from '../../common/Page';
-import { getTop30Films } from '../../../services/MetaInfoService';
 
 import Loading from '../../LoadingScreen/LoadingScreen';
 import ScrollCard from './ScrollCard/ScrollCard';
@@ -12,7 +12,7 @@ export default function Top30() {
     const alt = "https://ik.imagekit.io/mbts/top30mob_rUIwxy1GF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646131895099"
 
     const [loading, setLoading] = useState(true);
-    const [films, setFilms] = useState([]);
+    const [films, setFilms]     = useState([]);
     const [modal, setModal]     = useState(false);
     const [inFocus, setInFocus] = useState();
 
