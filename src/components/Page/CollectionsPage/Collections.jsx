@@ -14,6 +14,7 @@ import trueS from '../../../images/collections/Cards/True Stories.webp';
 import horror from '../../../images/collections/Cards/Horror Nights.webp';
 import meta from '../../../images/collections/Cards/The Meta Experience.webp';
 import intl from '../../../images/collections/Cards/International Affair.webp';
+import essen from '../../../images/collections/Cards/MustWatch.webp';
 
 import './collections.css';
 
@@ -34,6 +35,11 @@ export default function Collections() {
             name  : "International Affair",
             poster: intl,
             link  : "international"
+        },
+        {
+            name: "MBTS Essentials",
+            poster: essen,
+            link: "mbts-essentials"
         },
         {
             name  : "Horror Nights",

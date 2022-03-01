@@ -1,6 +1,5 @@
 import { Routes, Route, HashRouter } from "react-router-dom";
 
-import BucketList from './components/Page/BucketList';
 import About from './components/Page/AboutPage/About';
 import ErrorScreen from './components/ErrorScreen/ErrorScreen';
 import LandingPage from './components/Page/LandingPage/LandingPage';
@@ -17,6 +16,7 @@ import Romantic from './components/Page/CollectionsPage/Collections/Romantic';
 import TrueStory from './components/Page/CollectionsPage/Collections/TrueStory';
 import Lighthearted from './components/Page/CollectionsPage/Collections/Lighthearted';
 import International from './components/Page/CollectionsPage/Collections/International';
+import Essentials from './components/Page/CollectionsPage/Collections/Essentials';
 
 function App() {
   return (
@@ -24,7 +24,6 @@ function App() {
       <Routes>
         <Route exact path="/about" element={<About />} />
         <Route exact path="/" element={<LandingPage />} />
-        <Route exact path="/bucket-list" element={<BucketList />} />
         <Route exact path="/collections" element={<Collections />} />
 
         <Route exact path="/collections/meta" element={<Meta />} />
@@ -38,6 +37,7 @@ function App() {
         <Route exact path="/collections/True-Story" element={<TrueStory />} />
         <Route exact path="/collections/lighthearted" element={<Lighthearted />} />
         <Route exact path="/collections/international" element={<International />} />
+        <Route exact path="/collections/mbts-essentials" element={<Essentials />} />
 
         <Route element={ErrorScreen} />
       </Routes>
