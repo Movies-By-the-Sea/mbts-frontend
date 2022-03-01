@@ -9,7 +9,7 @@ export const Page = (props) => {
     <Navbar />
       <div className="container">
 
-        <BgInfo info={props.info} />
+        {props.info === undefined ? <></> : (<BgInfo info={props.info} />)}
         <br /><br />
         
         {props.children}

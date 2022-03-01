@@ -12,3 +12,13 @@ export async function getLatestFilm() {
         return [];
     }
 }
+
+export async function getTop30Films() {
+    try {
+        const response = await axios.get("/top30")
+        return response.data
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}

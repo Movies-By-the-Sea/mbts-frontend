@@ -4,6 +4,7 @@ import About from './components/Page/AboutPage/About';
 import ErrorScreen from './components/ErrorScreen/ErrorScreen';
 import LandingPage from './components/Page/LandingPage/LandingPage';
 import Collections from './components/Page/CollectionsPage/Collections';
+import Top30 from "./components/Page/Top30/Top30";
 
 import Meta from './components/Page/CollectionsPage/Collections/Meta';
 import SciFi from './components/Page/CollectionsPage/Collections/SciFi';
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/" element={<LandingPage />} />
         <Route exact path="/collections" element={<Collections />} />
+        <Route exact path="/top30" element={<Top30 />} />
 
         <Route exact path="/collections/meta" element={<Meta />} />
         <Route exact path="/collections/drama" element={<Drama />} />
