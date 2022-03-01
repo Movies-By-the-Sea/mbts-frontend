@@ -1,4 +1,4 @@
-import { getTop30Films } from '../../../services/MetaInfoService';
+import { callAPI } from '../../../services/MovieService';
 import { useState, useEffect } from 'react';
 import { Page } from '../../common/Page';
 
@@ -17,9 +17,9 @@ export default function Top30() {
     const [inFocus, setInFocus] = useState();
 
     useEffect(() => {
-        getTop30Films()
+        callAPI('top30')
         .then((res) => {
-          setFilms(res['result']);
+          setFilms(res);
           setLoading(false);
         })
       }, []);

@@ -10,16 +10,16 @@ import './collections.css';
 export default function Collections() {
 
   const defaultBg = {
-    name : "Browse Collection",
-    bg_info: "Requiem For A Dream, Darren Arronofsky",
-    bg: "https://ik.imagekit.io/mbts/collections_ucwl3bPOi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645937449246",
+    name    : "Browse Collection",
+    bg_info : "Requiem For A Dream, Darren Arronofsky",
+    bg      : "https://ik.imagekit.io/mbts/collections_ucwl3bPOi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645937449246",
     subtitle: "Scroll or use arrow keys to select an experience from below and discover more such films."
   }
 
-    const [bgTitle, setBgTitle] = useState(defaultBg.name);
+    const [bgTitle, setBgTitle]       = useState(defaultBg.name);
     const [bgSubtitle, setBgSubtitle] = useState(defaultBg.subtitle);
-    const [bg, setBg] = useState(defaultBg.bg);  
-    const [bgInfo, setBgInfo] = useState(defaultBg.bg_info)
+    const [bg, setBg]                 = useState(defaultBg.bg);
+    const [bgInfo, setBgInfo]         = useState(defaultBg.bg_info)
 
     const isMobile = useMediaQuery({query:'(max-width:600px)'});
     const navigate = useNavigate();

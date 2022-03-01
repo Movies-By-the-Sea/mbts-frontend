@@ -7,7 +7,7 @@ import ScrollBar from '../ScrollBar/ScrollBar';
 
 import './collection.css';
 
-export const Collection = (props) => {
+export const FormatComponent = (props) => {
 
   const [modal, setModal]     = useState(false);
   const [inFocus, setInFocus] = useState();

@@ -3,13 +3,13 @@
   "name": "Movies By The Sea",
   "icons": [
     {
-      "src": "logo.png",
-      "type": "image/png",
+      "src": "favicon.ico",
+      "type": "icon/ico",
       "sizes": "192x192"
     },
     {
-      "src": "logo.png",
-      "type": "image/png",
+      "src": "favicon.ico",
+      "type": "icon/ico",
       "sizes": "512x512"
     }
   ],

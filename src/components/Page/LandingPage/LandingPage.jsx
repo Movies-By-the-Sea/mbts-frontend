@@ -2,7 +2,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState } from 'react';
 
 import { Page } from '../../common/Page';
-import { getLatestFilm } from '../../../services/MetaInfoService';
+import { callAPI } from '../../../services/MovieService';
 
 import Modal from '../../common/Modal/Modal';
 import Loading from '../../LoadingScreen/LoadingScreen';
@@ -36,9 +36,9 @@ export default function LandingPage() {
   }
 
   useEffect(() => {
-    getLatestFilm()
+    callAPI('latest')
     .then((res) => {
-      setLatestFilm(res['result'][0]);
+      setLatestFilm(res[0]);
       setLoading(false);
     })
   }, []);
