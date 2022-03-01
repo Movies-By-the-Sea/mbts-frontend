@@ -9,7 +9,6 @@ export default function ScrollBar({data, openModal, className, advanced, setHove
     {data.map((item) => (
       <img 
       key       = {item.name}
-      onMouseEnter = {setHover(item.name)}
       onClick   = {openModal(item)}
       alt       = {item.name}
       src       = {item.poster}

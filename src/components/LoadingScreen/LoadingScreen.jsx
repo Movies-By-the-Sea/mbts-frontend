@@ -9,7 +9,6 @@ export default function Loading() {
         "Writing the first draft of the script",
         "Preparing the film storyboard",
         "Assembling the cast and crew",
-        "Deciding the location and arranging logistics",
         "Setting up the lights and camera to start filming",
         "Editing footage in post-production",
         "Recording epic score and soundtrack",
