@@ -22,7 +22,7 @@ export default function Loading() {
     setTimeout(function(){
         setTextIndex((textIndex + 1) % exampleText.length);
         setLoaderText(exampleText[textIndex]);
-    }, 700);
+    }, 500);
 
   return (
     <div className='loading-screen'>

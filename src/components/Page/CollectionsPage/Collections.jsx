@@ -1,102 +1,48 @@
+import { useState } from 'react';
+import { mapping } from './mapping';
 import { Page } from '../../common/Page';
 import { useNavigate } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
 import ScrollBar from '../../common/ScrollBar/ScrollBar';
-import scifi from '../../../images/collections/Cards/scifi.webp';
-import drama from '../../../images/collections/Cards/Drama.webp';
-import action from '../../../images/collections/Cards/Action.webp';
-import anime from '../../../images/collections/Cards/animated.webp';
-import roman from '../../../images/collections/Cards/romantic.webp';
-import essen from '../../../images/collections/Cards/MustWatch.webp';
-import thriller from '../../../images/collections/Cards/Mystery.webp';
-import light from '../../../images/collections/Cards/Lighthearted.webp';
-import trueS from '../../../images/collections/Cards/True Stories.webp';
-import horror from '../../../images/collections/Cards/Horror Nights.webp';
-import meta from '../../../images/collections/Cards/The Meta Experience.webp';
-import intl from '../../../images/collections/Cards/International Affair.webp';
-
 import './collections.css';
 
 export default function Collections() {
 
+  const defaultBg = {
+    name : "Browse Collection",
+    bg_info: "Requiem For A Dream, Darren Arronofsky",
+    bg: "https://ik.imagekit.io/mbts/collections_ucwl3bPOi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645937449246",
+    subtitle: "Scroll or use arrow keys to select an experience from below and discover more such films."
+  }
+
+    const [bgTitle, setBgTitle] = useState(defaultBg.name);
+    const [bgSubtitle, setBgSubtitle] = useState(defaultBg.subtitle);
+    const [bg, setBg] = useState(defaultBg.bg);  
+    const [bgInfo, setBgInfo] = useState(defaultBg.bg_info)
+
     const isMobile = useMediaQuery({query:'(max-width:600px)'});
     const navigate = useNavigate();
-
-    const img = "https://ik.imagekit.io/mbts/collections_ucwl3bPOi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645937449246";
-
-    const mapping = [
-        {
-            name  : "Animation Land",
-            poster: anime,
-            link  : "animated"
-        },
-        {
-            name  : "International Affair",
-            poster: intl,
-            link  : "international"
-        },
-        {
-            name  : "MBTS Essentials",
-            poster: essen,
-            link  : "mbts-essentials"
-        },
-        {
-            name  : "Horror Nights",
-            poster: horror,
-            link  : "horror"
-        },
-        {
-            name  : "True Stories",
-            poster: trueS,
-            link  : "True-Story"
-        },
-        {
-            name  : "The Meta Experience",
-            poster: meta,
-            link  : "meta"
-        },
-        {
-            name  : "Romantic Invitation",
-            poster: roman,
-            link  : "romantic"
-        },
-        {
-            name  : "The SciFi Imagination",
-            poster: scifi,
-            link  : "sci-fi"
-        },
-        {
-            name  : "Life of Action",
-            poster: action,
-            link  : "action"
-        },
-        {
-            name  : "Soulful Drama",
-            poster: drama,
-            link  : "drama"
-        },
-        {
-            name  : "Mystery Alley",
-            poster: thriller,
-            link  : "thriller"
-        },
-        {
-            name  : "Laid Back Days",
-            poster: light,
-            link  : "lighthearted"
-        }
-    ]
 
     const openPage = (item) => (e) => {
         e.preventDefault();
         navigate(`/collections/${item.link}`);
     }
 
+    const handleHover = (item) => (e) => {
+      setTimeout(() => {
+        e.preventDefault();
+        setBgTitle(item.name);
+        setBgInfo(item.bg_info);
+        setBgSubtitle(item.subtitle);
+        setBg(item.bg);
+      }, 500);
+    }
+
   return (
-      <Page img={img} alt={img} info={"Requiem For A Dream, Darren Arronofsky"}>
-          <h1>Browser Collection</h1>
-          <p>Select an experience from below to discover more such films</p>
+      <Page img={bg} alt={bg} info={bgInfo}>
+          <h1>{bgTitle}</h1>
+          <p>{bgSubtitle}</p>
           {isMobile ? (
             mapping.map((card) => {
                 return (<img 
@@ -107,11 +53,17 @@ export default function Collections() {
                 className = "card-img-mob" />)
             })
           ) : ( 
-            <ScrollBar
-            data      = {mapping}
-            openModal = {openPage}
-            className = "collection-card"
-            />)}
+              <div className='scroll-collection-box'>
+                <ScrollBar
+                data      = {mapping}
+                openModal = {openPage}
+                className = "collection-card"
+                advanced={true}
+                setHover={handleHover}
+                defaultState={defaultBg}
+                />
+              </div>
+        )}
       </Page>
   )
 }
