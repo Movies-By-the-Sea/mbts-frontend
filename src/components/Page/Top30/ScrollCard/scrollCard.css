@@ -23,6 +23,7 @@
 
 .sc-title {
   font-size: 60px;
+  text-transform: capitalize;
 }
 
 .sc-subtitle {
@@ -31,6 +32,7 @@
 
 .sc-action {
   margin-top: 30px;
+  display: flex;
 }
 
 .sc-button {
@@ -40,6 +42,8 @@
   padding: 7px 20px;
   border-radius: 2px;
   transition: 700ms;
+  width: fit-content;
+  cursor: pointer;
 }
 
 .sc-button:hover {

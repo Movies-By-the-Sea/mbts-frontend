@@ -4,12 +4,15 @@ import { getTop30Films } from '../../../services/MetaInfoService';
 
 import Loading from '../../LoadingScreen/LoadingScreen';
 import ScrollCard from './ScrollCard/ScrollCard';
+import Modal from '../../common/Modal/Modal';
 
 export default function Top30() {
     const img = "https://ik.imagekit.io/mbts/top30_nnzfgf-gm.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646124049610";
 
     const [loading, setLoading] = useState(true);
     const [films, setFilms] = useState([]);
+    const [modal, setModal]     = useState(false);
+    const [inFocus, setInFocus] = useState();
 
     useEffect(() => {
         getTop30Films()
@@ -19,9 +22,31 @@ export default function Top30() {
         })
       }, []);
 
+      const closeModal = () => {
+        if(modal){
+          document.querySelectorAll('.Page').forEach(function(m) {
+            m.style.opacity = "1";
+          });
+          setInFocus();
+          setModal(false);
+        }
+      }
+    
+      const openModal = (item) => (e) => {
+        e.preventDefault();
+        document.querySelectorAll('.Page').forEach(function(m) {
+          m.style.opacity = "0.8";
+        });
+        setInFocus(item)
+        setModal(true);
+      }
+
       return loading ? (<Loading />) : (
+          <>
           <Page img={img} alt={img}>
-              <ScrollCard data={films}/>
+              <ScrollCard data={films} handleOpen={openModal}/>
           </Page>
+          {modal ? <Modal handleModal={closeModal} info={inFocus} /> : <></>}
+          </>
       )
 }

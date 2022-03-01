@@ -1,6 +1,6 @@
 import './scrollCard.css';
 
-export default function scrollCard({data}) {
+export default function scrollCard({data, handleOpen}) {
 
     return (
         <div className='t3-scroll-parent' >
@@ -23,7 +23,14 @@ export default function scrollCard({data}) {
                   </p>
                   <p>Directed by {item.director}. Starring {item.actors.map((i) => i.name + ', ')}</p>
                   <div className="sc-action">
-                    <a target={"_blank"} rel="noreferrer" href={item.trailer} className="sc-button">Watch Trailer</a>
+                    <div 
+                      style     = {{marginRight:"20px"}}
+                      onClick   = {handleOpen(item)}
+                      className = "sc-button">Read More</div>
+                    <a 
+                      target = {"_blank"}
+                      rel    = "noreferrer"
+                      href   = {item.trailer} className = "sc-button">Watch Trailer</a>
                   </div>
                 </div>
               </div>
