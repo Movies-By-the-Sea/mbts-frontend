@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/mbts-frontend/static/css/main.ac806504.css",
-    "main.js": "/mbts-frontend/static/js/main.f8a86f01.js",
+    "main.css": "/mbts-frontend/static/css/main.988723f1.css",
+    "main.js": "/mbts-frontend/static/js/main.18b06a42.js",
     "static/js/787.cda612ba.chunk.js": "/mbts-frontend/static/js/787.cda612ba.chunk.js",
     "static/media/loading.gif": "/mbts-frontend/static/media/loading.dae4fa2ccc90a0024305.gif",
+    "static/media/MustWatch.webp": "/mbts-frontend/static/media/MustWatch.f970a6c70dc406558ee6.webp",
     "static/media/romantic.webp": "/mbts-frontend/static/media/romantic.8916a250b27b0dc854e5.webp",
     "static/media/True Stories.webp": "/mbts-frontend/static/media/True Stories.57393bc3b096f7e3ffbf.webp",
     "static/media/scifi.webp": "/mbts-frontend/static/media/scifi.99db1ba17be130535d83.webp",
@@ -16,12 +17,12 @@
     "static/media/Action.webp": "/mbts-frontend/static/media/Action.6344fa76c5236dd59005.webp",
     "static/media/Drama.webp": "/mbts-frontend/static/media/Drama.508007a15d9874c562e4.webp",
     "index.html": "/mbts-frontend/index.html",
-    "main.ac806504.css.map": "/mbts-frontend/static/css/main.ac806504.css.map",
-    "main.f8a86f01.js.map": "/mbts-frontend/static/js/main.f8a86f01.js.map",
+    "main.988723f1.css.map": "/mbts-frontend/static/css/main.988723f1.css.map",
+    "main.18b06a42.js.map": "/mbts-frontend/static/js/main.18b06a42.js.map",
     "787.cda612ba.chunk.js.map": "/mbts-frontend/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac806504.css",
-    "static/js/main.f8a86f01.js"
+    "static/css/main.988723f1.css",
+    "static/js/main.18b06a42.js"
   ]
 }
