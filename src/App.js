@@ -1,4 +1,4 @@
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import Top30 from "./components/Page/Top30/Top30";
 import About from './components/Page/AboutPage/About';
@@ -11,7 +11,7 @@ import CollectionCard from './components/common/CollectionCard/CollectionCard';
 
 function App() {
   return (
-    <HashRouter className="App">
+    <BrowserRouter className="App">
       <Routes>
         <Route exact path="/about" element={<About />} />
         <Route exact path="/" element={<LandingPage />} />
@@ -29,7 +29,7 @@ function App() {
 
         <Route path="*" element={ErrorScreen} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

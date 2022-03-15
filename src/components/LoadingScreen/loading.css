@@ -29,3 +29,13 @@
   font-size: 20px;
   color: darkgray;
 }
+
+@media screen and (max-width: 600px) {
+  .loading-gif {
+    width: 90vw;
+    height: auto;
+  }
+  .loader-text {
+    font-size: 15px;
+  }
+}
