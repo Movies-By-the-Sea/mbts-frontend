@@ -5,7 +5,7 @@ import bg_img from '../../theme/style';
 
 export const Page = (props) => {
   return (
-    <div className='Page' style={bg_img(props.img, props.alt)}>
+    <div className='Page' style={bg_img(props.img, props.alt, props.overflow)}>
     <Navbar />
       <div className="container">
 

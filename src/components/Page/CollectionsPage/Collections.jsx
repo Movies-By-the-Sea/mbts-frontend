@@ -11,7 +11,7 @@ export default function Collections() {
   const defaultBg = {
     name    : "Browse Collection",
     bg_info : "Requiem For A Dream, Darren Arronofsky",
-    bg      : "https://ik.imagekit.io/mbts/collections_ucwl3bPOi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645937449246",
+    bg      : "https://ik.imagekit.io/mbts/pexels-yelena-odintsova-10556717_bhw3cW4rN.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1647329042970",
     subtitle: "Select an experience from below and discover more such films."
   }
 
@@ -25,9 +25,9 @@ export default function Collections() {
 
   return (
       <Page 
-        img={defaultBg.bg} 
-        alt={defaultBg.bg} 
-        info={defaultBg.bg_info}>
+        img      = {defaultBg.bg}
+        alt      = {defaultBg.bg}
+        overflow = {true}>
           <h1>{defaultBg.name}</h1>
           <p>{defaultBg.subtitle}</p>
           <div className="collection-parent-container">
@@ -35,20 +35,22 @@ export default function Collections() {
                   return (
                     <div className="flip-card-container">
                       <Flippy 
-                        flipOnHover={true}
-                        flipDirection="horizontal"
-                        className="flip-card"
+                        flipOnHover   = {true}
+                        flipDirection = "horizontal"
+                        className     = "flip-card"
+                        onClick       = {openPage(card)}
                       >
                         <FrontSide>
                           <img 
                             src       = {card.poster}
                             alt       = {card.name}
-                            onClick   = {openPage(card)}
                             className = {isMobile ? "card-img-mob" : "flip-front"} />
                         </FrontSide>
                         <BackSide>
                           <div className="flip-back">
-                            <div className='flip-back-heading'>{card.name}</div>
+                            <div 
+                              className = 'flip-back-heading'
+                              >{card.name}</div>
                             <p>{card.subtitle}</p>
                           </div>
                         </BackSide>

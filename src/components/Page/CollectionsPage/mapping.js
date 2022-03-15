@@ -34,7 +34,7 @@ export const mapping = [
         name: "MBTS Essentials",
         link: "must-watch",
         subtitle: "There are some films which deserves to be on everyone’s bucket list. Sharing here are some of the #MustWatch movies.",
-        bg_info: "MBTS Essentials",
+        bg_info: "The Green Knight, David Lowery",
         poster: essen,
         bg: "https://ik.imagekit.io/mbts/mbts_essentials_80oM8GEPq.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1646110586120"
     },
