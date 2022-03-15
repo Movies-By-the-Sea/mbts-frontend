@@ -6,7 +6,6 @@
 .flip-card-container {
   height: 250px;
   width: 430px;
-  margin: 10px;
   background-color: transparent;
   border-radius: 10px;
 }
@@ -15,16 +14,10 @@
   cursor: pointer;
 }
 
-.flippy-front,
-.flippy-back {
-  padding: 0em;
-}
-
 .flip-front {
   height: inherit;
   width: inherit;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .flip-back {
@@ -34,7 +27,6 @@
   border-radius: 10px;
   height: inherit;
   width: inherit;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .flip-back-heading {
