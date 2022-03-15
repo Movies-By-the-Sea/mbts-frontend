@@ -26,9 +26,18 @@
   cursor: pointer;
 }
 
-/* .card-item:hover {
-  height: 300px;
-  width: 200px;
-  transition: 500ms;
-  cursor: pointer;
-} */
+/* width */
+::-webkit-scrollbar {
+  height: 5px;
+  bottom: 1000px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #747474;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #242424;
+}

@@ -1,19 +1,51 @@
+.collection-parent-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flip-card-container {
+  height: 250px;
+  width: 430px;
+  margin: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.flip-card-container:hover {
+  cursor: pointer;
+}
+
+.flippy-front,
+.flippy-back {
+  padding: 0em;
+}
+
+.flip-front {
+  height: inherit;
+  width: inherit;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flip-back {
+  line-height: 2;
+  background-color: #141414;
+  padding: 20px;
+  border-radius: 10px;
+  height: inherit;
+  width: inherit;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flip-back-heading {
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .card-img-mob {
   height: auto;
   width: 85vw;
   border-radius: 5px;
   margin: 5px 0px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.collection-card {
-  height: 280px;
-  width: auto;
-  border-radius: 10px;
-  margin: 10px;
-  transition: 500ms;
-}
-
-.collection-card:hover {
-  cursor: pointer;
 }
