@@ -13,6 +13,7 @@ export default function SearchPage() {
     const [userOutput, setUserOutput] = useState(false);
     const [apiOutput, setApiOutput]   = useState([]);
     const [modal, setModal]           = useState(false);
+    const [searchNumber, setSearchNumber] = useState(0);
 
 
     const handleChange = (e) => {
@@ -22,6 +23,8 @@ export default function SearchPage() {
 
     const handleSubmit = (e) => {
         if(e.charCode === 13) {
+            setSearchNumber(searchNumber + 1);
+            setUserOutput(false);
             let endpoint = 'movie/' + userInput;
             callAPI(endpoint)
             .then(res => {
@@ -90,15 +93,15 @@ export default function SearchPage() {
                                         Directed by {apiOutput[0].director}
                                     </div>
                                 </div>
-                                <p className='read-button' onClick={openModal}>
+                                <p className='search-success-btn' onClick={openModal}>
                                     Read Review
                                 </p>
-                                <a target={"_blank"} rel="noreferrer" href={apiOutput[0].trailer} className="modal-trailer">
+                                <a target={"_blank"} rel="noreferrer" href={apiOutput[0].trailer} className="search-success-btn">
                                     Watch Trailer
                                 </a>
                             </div>
                             )
-                        ) : <></>}
+                        ) : searchNumber === 0 ? <></> : <h1>Searching...</h1>}
                 </div>
             </div>
         </Page>
