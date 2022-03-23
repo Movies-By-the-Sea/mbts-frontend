@@ -76,3 +76,59 @@
   transition: 500ms;
   cursor: pointer;
 }
+
+.search-failure-heading {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+.search-failure-subheading {
+  color: gray;
+  line-height: 2;
+}
+
+@media screen and (max-width: 600px) {
+  .search-container {
+    display: block;
+    padding: 0px 10px;
+  }
+
+  .total-card {
+    padding: 5px;
+  }
+  .total-number {
+    font-size: 70px;
+  }
+  .total-number-subheading {
+    font-size: 25px;
+  }
+
+  .search-card {
+    margin-left: 0px;
+    margin-top: 20px;
+    width: inherit;
+  }
+  .search-card-heading {
+    font-size: 30px;
+  }
+  .search-card-subheading {
+    font-size: 12px;
+  }
+
+  .search-card-input {
+    font-size: 12px;
+    width: -webkit-fill-available;
+  }
+
+  .search-success {
+    display: block;
+  }
+  .search-success-btn {
+    margin: 20px 0px;
+    width: fit-content;
+  }
+
+  .search-failure-heading {
+    margin-top: 50px;
+  }
+}

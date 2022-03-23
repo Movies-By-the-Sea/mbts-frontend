@@ -76,8 +76,8 @@ export default function SearchPage() {
                         (apiOutput.length === 0 ? 
                             (
                             <div className="search-failure">
-                                <div className="search-failure-header">
-                                    No matching results
+                                <div className="search-failure-heading">
+                                    No matching results :(
                                 </div>
                                 <div className="search-failure-subheading">
                                     Make sure the movie name is correct. Or we simply haven’t reviewed this one yet.
