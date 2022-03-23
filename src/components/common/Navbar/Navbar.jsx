@@ -42,6 +42,9 @@ export default function Navbar() {
                                     <Link to="/collections">Collections</Link>
                                 </div>
                                 <div className="nav-mob-item">
+                                    <Link to="/search">Search</Link>
+                                </div>
+                                <div className="nav-mob-item">
                                     <Link to="/about">About</Link>
                                 </div>
                             </div>
@@ -70,6 +73,9 @@ export default function Navbar() {
                         </div>
                         <div className="nav-link-item">
                             <Link to="/collections">Collections</Link>
+                        </div>
+                        <div className="nav-link-item">
+                            <Link to="/search">Search</Link>
                         </div>
                         <div className="nav-link-item">
                             <Link to="/about">About</Link>
