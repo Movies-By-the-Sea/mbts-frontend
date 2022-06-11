@@ -53,7 +53,7 @@ export default function LandingPage() {
           <div className="cw-latest-container">
             {isMobile ? (<></>) : <img src={latestFilm.poster} alt="" className="cw-img" />}
             <div className="cw-info">
-              <div className='cw-mobile-heading'>{latestFilm.name}</div>
+              <div className='cw-movie-heading'>{latestFilm.name}</div>
               {isMobile ? (
                 <>
                   <h3>by {latestFilm.director}</h3>

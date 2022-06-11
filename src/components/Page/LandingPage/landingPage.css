@@ -1,5 +1,6 @@
 .cw-container {
   display: flex;
+  align-items: center;
 }
 
 .cw-latest {
@@ -22,6 +23,17 @@
   line-height: 1.5;
 }
 
+.cw-text {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.cw-movie-heading {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
 .cw-heading {
   flex: 1;
   font-size: 50px;
@@ -40,7 +52,7 @@
   .cw-info h3 {
     margin-top: 10px;
   }
-  .cw-mobile-heading {
+  .cw-movie-heading {
     font-size: 50px;
     font-family: "Bebas Neue", cursive;
     color: whitesmoke;
