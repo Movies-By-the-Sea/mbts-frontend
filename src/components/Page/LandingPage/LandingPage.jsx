@@ -36,7 +36,7 @@ export default function LandingPage() {
   }
 
   useEffect(() => {
-    callAPI('latest')
+    callAPI('motd')
     .then((res) => {
       setLatestFilm(res[0]);
       setLoading(false);
@@ -49,15 +49,14 @@ export default function LandingPage() {
     <Page img={img} alt={latestFilm.poster} info="Portrait of a Lady on Fire, Seline Sciamma">
       <div className="cw-container">
         <div className="cw-latest">
-          <h3>Currently Watching</h3>
+          <div className='cw-text'>Movie of the Day</div>
           <div className="cw-latest-container">
             {isMobile ? (<></>) : <img src={latestFilm.poster} alt="" className="cw-img" />}
             <div className="cw-info">
-              <h1>{latestFilm.name}</h1>
+              <div className='cw-mobile-heading'>{latestFilm.name}</div>
               {isMobile ? (
                 <>
-                  <p>A film by</p>
-                  <h3>{latestFilm.director}</h3>
+                  <h3>by {latestFilm.director}</h3>
                 </>
               ) : (
                 <>

@@ -37,15 +37,27 @@
     padding: 0px;
     line-height: 1;
   }
-  .cw-info h1 {
-    font-family: "Bebas Neue", cursive;
+  .cw-info h3 {
+    margin-top: 10px;
   }
-  .cw-latest h3 {
+  .cw-mobile-heading {
+    font-size: 50px;
+    font-family: "Bebas Neue", cursive;
+    color: whitesmoke;
+    margin-top: 20px
+  }
+  .cw-latest {
+    bottom: 50px;
+    position: absolute;
     color: gray;
   }
   .cw-heading {
     color: transparent;
-    font-size: 20px;
+    font-size: 30px;
     padding: 0px;
+  }
+  .cw-text {
+    font-weight: bold;
+    font-size: 17px;
   }
 }
