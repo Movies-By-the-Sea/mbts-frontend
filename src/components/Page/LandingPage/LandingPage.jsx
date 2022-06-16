@@ -2,6 +2,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState } from 'react';
 
 import { Page } from '../../common/Page';
+import { bg_data } from '../../../theme/bg_data';
 import { callAPI } from '../../../services/MovieService';
 
 import Modal from '../../common/Modal/Modal';
@@ -16,7 +17,6 @@ export default function LandingPage() {
   const [modal, setModal]           = useState(false);
 
   const isMobile = useMediaQuery({query:'(max-width:600px)'});
-  const img      = "https://ik.imagekit.io/mbts/landing_page_UbSj4_6Ut.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645937449100";
 
   const closeModal = () => {
     if(modal){
@@ -36,7 +36,7 @@ export default function LandingPage() {
   }
 
   useEffect(() => {
-    callAPI('motd')
+    callAPI(bg_data['landingPage']['api_endpoint'])
     .then((res) => {
       setLatestFilm(res[0]);
       setLoading(false);
@@ -46,7 +46,12 @@ export default function LandingPage() {
 
   return loading ? (<Loading />) : (
     <>
-    <Page img={img} alt={latestFilm.poster} info="Portrait of a Lady on Fire, Seline Sciamma">
+    <Page 
+      video = {bg_data['landingPage']['video']}
+      img   = {bg_data['landingPage']['image']}
+      alt   = {bg_data['landingPage']['alt'] || latestFilm.poster}
+      info  = {bg_data['landingPage']['info']}>
+
       <div className="cw-container">
         <div className="cw-latest">
           <div className='cw-text'>Movie of the Day</div>

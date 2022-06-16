@@ -22,8 +22,8 @@ export default function ScrollCard({data, handleOpen}) {
                   <div className="sc-text">
                     <div className="sc-title">{index + 1}. {item.name}</div>
                     <div className="sc-subtitle">
-                      {isMobile ? (`${item.ratings.overall} / 5`) : (`MBTS Score: ${item.ratings.overall} / 5`)}  
-                      <div className="info-divider">|</div>
+                      {isMobile ? ('') : (`MBTS Score: ${item.ratings.overall} / 5`)}  
+                      {isMobile ? ('') : (<div className="info-divider">|</div>)}
                       {item.genre.map((i)=>i.name + ' ')}
                       {isMobile ? (<></>) : (
                         <>
@@ -33,14 +33,17 @@ export default function ScrollCard({data, handleOpen}) {
                       )}
                     </div>
                     {isMobile ? (
-                      <img 
-                      key       = {item.name}
-                      alt       = {item.name}
-                      src       = {item.poster}
-                      className = "sc-img"
-                      />
+                      <>
+                        <br />
+                        <img 
+                        key       = {item.name}
+                        alt       = {item.name}
+                        src       = {item.poster}
+                        className = "sc-img"
+                        />
+                      </>
                     ) : (<></>)}
-                    <p>Directed by {item.director}. Starring {item.actors.map((i) => i.name + ', ')}</p>
+                    <p>Directed by {item.director}</p>
                     <div className="sc-action">
                       <div 
                         onClick   = {handleOpen(item)}

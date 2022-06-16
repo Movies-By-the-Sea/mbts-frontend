@@ -1,4 +1,5 @@
 import { mapping } from './mapping';
+import { bg_data } from '../../../theme/bg_data';
 import { Page } from '../../common/Page';
 import { useNavigate } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
@@ -10,8 +11,7 @@ export default function Collections() {
 
   const defaultBg = {
     name    : "Browse Collection",
-    bg_info : "Requiem For A Dream, Darren Arronofsky",
-    bg      : "https://ik.imagekit.io/mbts/pexels-yelena-odintsova-10556717_bhw3cW4rN.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1647329042970",
+    bg      : bg_data['collections']['image'],
     subtitle: "Select an experience from below and discover more such films."
   }
 
@@ -25,6 +25,7 @@ export default function Collections() {
 
   return (
       <Page 
+        video    = {bg_data['collections']['video']}
         img      = {defaultBg.bg}
         alt      = {defaultBg.bg}
         overflow = {true}>

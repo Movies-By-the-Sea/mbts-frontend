@@ -104,10 +104,11 @@
   .sc-text {
     margin: 10px 0px;
     line-height: 1.5;
+    font-size: 12px;
   }
   .sc-img {
     width: 100%;
-    height: 500px;
+    height: 400px;
   }
   .sc-action {
     justify-content: space-around;
